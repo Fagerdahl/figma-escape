@@ -1,14 +1,24 @@
+*{
+    margin:0; /*This is to reset all default-margins and paddings*/
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
 body{
+    font-family: "open-sans", sans-serif;
     background-color: white;
     font-size: 14px;
 
 }
 
-*{
-    margin:0; /*This is to delete all default-margins and paddings*/
-    padding: 0;
-    box-sizing: border-box;
-    
+.main{
+    display:grid;
+    grid-template-columns: 1fr; /*one column for mobile first layout*/
+    grid-template-rows: auto;
+    gap: 20px;
+    padding:20px;
+
 }
 
 h1 span{
@@ -21,25 +31,36 @@ h1 span{
     display: none;
 }
 
-.main{
-    display:grid;
-    grid-template-columns: 1fr; /*one column for mobile first layout*/
-}
-.main .online-btn{
+.online-btn{
     box-sizing: border-box;
     border-style: none;
-    background-color: #011827;
-    font-size:x-small; 
-    color: rgb(43, 43, 189);
+    background-color: white;
+    font-size:small; 
+    color: #36769D;
     font-weight: 600;
+    margin-top: 10px;
+    text-decoration: underline;
 }
 
-.main .onsite-btn{
+.onsite-btn{
+    justify-self: center;
+    background-color: #8ACFE5;
+    max-width: 200px;
+    width:100%;
+    margin:0;
+    margin-top: 30px;
+    padding: 10px 20px;
     font-size: larger;
     font-weight: 600;
-    margin-left: 80px;
-    margin-right: 80px;
-    padding: 10px;
+
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 10px;
 }
 
 .header{
@@ -58,13 +79,6 @@ h1 span{
     height: auto;
 }
 
-.main-image{
-    width: 100%;
-    object-fit: cover;
-    height: auto;
-    margin-bottom: 10px;
-}
-
 h1{
     display: flex;
     flex-direction: column;
@@ -74,7 +88,7 @@ h1{
 
 .main-image {
     width: 100%; /*responsive image, the whole width of its container*/
-    object-fit: cover;
-    height: auto;
-    padding: 10px;
+    object-fit: contain;
+    height: ;
+    padding: 0;
 }
