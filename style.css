@@ -89,6 +89,32 @@ h1{
 .main-image {
     width: 100%; /*responsive image, the whole width of its container*/
     object-fit: contain;
-    height: ;
     padding: 0;
 }
+
+.user-quotes{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.quote-container{
+    display: flex;
+    align-items: center; 
+    max-width: 300px;
+
+
+}
+.quote-text{
+    font-style: italic;
+    margin-left: 10px;
+}
+.quote-text h6{
+font-style: normal;
+margin-top: 6px;
+font-size: x-small;
+
+}
+
+
+
