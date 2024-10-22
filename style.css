@@ -1,14 +1,56 @@
-html{
+body{
+    background-color: white;
+    font-size: 14px;
+
+}
+
+*{
+    margin:0; /*This is to delete all default-margins and paddings*/
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+h1 span{
+    display: block;
+    font-family: "open-sans", sans-serif;
+    padding-left: 10px;
+}
+
+.menu-list-desktop{
+    display: none;
+}
+
+.main{
+    display:grid;
+    grid-template-columns: 1fr; /*one column for mobile first layout*/
+}
+.main .online-btn{
+    box-sizing: border-box;
+    border-style: none;
     background-color: #011827;
+    font-size:x-small; 
+    color: rgb(43, 43, 189);
+    font-weight: 600;
+}
+
+.main .onsite-btn{
+    font-size: larger;
+    font-weight: 600;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 10px;
 }
 
 .header{
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 100px 1fr; /*100 px for logo, the rest 4 text*/
+    grid-template-rows: 100px; /*auto-height for rows*/
+    background-color: #011827;
     align-items: center;
-    padding: 20px;
-    background-color: #f0f0f0;
-    gap: 20px;
+    padding:10px;
+    color: white;
+    font-size: x-small;
 }
 
 .logo{
@@ -16,7 +58,23 @@ html{
     height: auto;
 }
 
-.main-image {
-    width: 300px;
+.main-image{
+    width: 100%;
+    object-fit: cover;
     height: auto;
+    margin-bottom: 10px;
+}
+
+h1{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    text-align: left;
+}
+
+.main-image {
+    width: 100%; /*responsive image, the whole width of its container*/
+    object-fit: cover;
+    height: auto;
+    padding: 10px;
 }
