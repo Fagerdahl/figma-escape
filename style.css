@@ -189,6 +189,7 @@ span{
     color: #36769D;
     font-weight: 600;
     margin-top: 10px;
+    margin-bottom: ;
     text-decoration: underline;
     border-style: none;
 }
@@ -201,7 +202,8 @@ span{
     background-color: #011827;
     align-items: center;
     align-content: center;
-    padding:10px;
+    padding:30px;
+    padding-bottom: 100px;
     color: white;
     width:100vw;
 }
@@ -210,7 +212,18 @@ article{
     font-size: larger; 
     max-width: 80%; /*width for Text*/   
     text-align: center;
-   
+}
+
+.full-story{
+    margin-top: 40px;
+    background-color: #011827;
+    color:  #8ACFE5;
+    outline-color:  #8ACFE5;
+    font-weight: bolder;
+    font-size: large;
+    padding:15px;
+    outline: 1px solid  #8ACFE5;
+    border-radius: 3px;
 }
 
 
