@@ -110,14 +110,14 @@ font-size: x-small;
 .popular-now h2{
     font-family: "Roboto", sans-serif;
     font-weight:400;
-    text-align: left;
+    text-align: center;
     padding: 10px;
 }
 
 .popular-now h2 .room-title-one{
     font-family: "Roboto", sans-serif;
     font-weight:400;
-    text-align: center;
+    text-align: left;
 }
 
 .popular-now img{
@@ -126,13 +126,26 @@ font-size: x-small;
     height: auto; /*Height and width are balanced to each other*/
 }
 
-.participants {
-/*in m stjärnfoto*/
+.room-details{
+    margin-top: -10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    display: flex; /*stars and participants together on a row*/
+    gap: 10px;
 }
 
 .room-description{
-    margin-top: 3%;
-    font-weight:bolder;
+    padding: 10px;
+}
+
+.stars img{
+    width:100px;
+    height: auto;
+}
+
+.participants{
+    font-size: 0.8rem;
+    margin-top: 1%;
 }
 
 .book-first-btn, .book-second-btn, .book-third-btn{
