@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Figma Escape</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'> <!--Responsive-->
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <!--script src='main.js'></script-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     <body>  
         <div class="header"> <!--My grid container-->
                 <img src="logo.png" alt="website Logo" class="logo"> <!--Logo-->
-                <h1>
+                <h1> 
                     <span>Hacker</span> 
                     <span>Escape</span>
                     <span>Rooms</span>
@@ -91,8 +91,6 @@
 
 
 
-
-
         <div class="button-container-two">
                 <button class="onsite-btn-two">On-site challenges</button>
                 <button class="online-btn-two">Online challenges</button>
@@ -116,19 +114,16 @@
             
             <button class="book-on-site-btn">Book on-site today</button>
         </section>             
-
-        <section class="friends-play">
-            
-        </section>
          
         <section class="online-play">
-            <h2>Play online or visit our venue for one of our 25 escape rooms</h2>
-            <p> Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil
-                inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
             <img src="online.png", alt="One person in front of a computer">
-        </section>     
+            <h2>Play online or visit our venue for one of our 25 escape rooms</h2>
+            <div class="play-online"><p> Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil
+                inuitam. Nemo nocere tibi erit, et non inimicos, et</p></div> 
 
-        <button type="button">See all challenges</button>   
+        <button class="see-all-btn">See all challenges</button>  
+        </section>    
+
         </main>
 
         <footer class="end-page">
@@ -140,23 +135,26 @@
                 </p>
 
                 <nav class="footer-nav">
-                    <ul class="footer-nav__list">
-                        <li class="footer-nav__item"><a href="#" class="mini-heading">Site map</a></li>
+
+                    <ul class="footer-nav__list us">
+                        <li class="footer-nav__item"><p href="#" class="mini-heading">Site map</p></li>
                         <li class="footer-nav__item"><a href="#">The Story</a></li>
                         <li class="footer-nav__item"><a href="#">Contact Us</a></li>
                         <li class="footer-nav__item"><a href="#">Legal</a></li>
+                     </ul>
 
+                     <ul class="footer-nav__list online">
                         <li class="footer-nav__item"><a href="#">Play Online</a></li>
                         <li class="footer-nav__item"><a href="#">Play On-site</a></li>
+                    </ul>
 
-                        <li class="footer-nav__item"><a href="#" class="mini-heading">Follow us on</a></li>
+                    <ul class="footer-nav__list follow">
+                        <li class="footer-nav__item"><p href="#" class="mini-heading">Follow us on</p></li>
                         <li class="footer-nav__item"><a href="#">Facebook</a></li>
                         <li class="footer-nav__item"><a href="#">Instagram</a></li>
-                        <li class="footer-nav__item"><a href="#">Twitter</a></li>
-
-
-
+                        <li class="footer-nav__item"><a href="#">Twitter</a></li>  
                     </ul>
+
                 </nav>
             </div> 
         </footer>
