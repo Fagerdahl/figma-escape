@@ -6,6 +6,15 @@
     box-sizing: border-box;  
 }
 
+.menu-list-desktop{
+    display:none;
+}
+
+.user-quote-two{
+    display:none;
+}
+
+
 body{
     font-family: "open-sans", sans-serif;
     background-color: white;
@@ -411,13 +420,15 @@ article{
 }
 
 
-
-
-
 /*Tablets>600px*/
 @media(min-width:600px){
+
+    .menu-list-desktop{
+    display:block;
+}
     .main{
         grid-template-columns: repeat(2,1fr);
+        gap: 20px;
     }
     
 }
@@ -427,6 +438,15 @@ article{
     .main{
         grid-template-columns: repeat(3,1fr);
         padding: 40px;
+        gap: 30px;
+    }
+
+    .header{
+        font-size: small; /*Text adjustment for bigger screens*/
+    }
+
+    .quote-container{
+        max-width: 500px; /*More width to the quote part*/
     }
 }
 
@@ -435,5 +455,14 @@ article{
     .main{
         grid-template-columns: repeat(4,1fr);
         padding: 60px;
+        gap: 40px; /*Wider gap on bigger screens*/
     }
+
+    .onsite-btn, .online-btn, .book-first-btn, .book-second-btn, .book-third-btn{
+        width:300px; 
+    }
+    .friends img{
+        width: 80%; /*smaller images on bigger screens*/
+    }
+    
 }
