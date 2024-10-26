@@ -90,8 +90,9 @@ h1 span{ /*hacker escape rooms text*/
 .quote-container{
     display: flex; /*flexbox to put image and text horisontally*/
     align-items: center;
+    text-align: left;
     justify-content: center;
-    font-size: larger; 
+    font-size: 1.2em;
     font-style: italic;
     margin-left: 25px;
     margin-top: 3em;
@@ -109,24 +110,28 @@ h1 span{ /*hacker escape rooms text*/
     margin-right: 10px;
 }
 
-.quote-text h6{
+.quote-text h6
+{
+font-family: "Roboto", sans-serif;
 font-style: normal;
-margin-top: 6px;
-font-size: x-small;
-
+margin-top: 4px;
+font-size: 0.7em;
+font-weight: 400;
 }
+
+.popular-now span{
+    color: black;
+    font-size:14px; 
+    font-family: "Roboto", sans-serif;
+    font-weight:400;
+}
+
 
 .popular-now h2{
     font-family: "Roboto", sans-serif;
     font-weight:400;
-    text-align: center;
-    padding: 10px;
-}
-
-.popular-now h2 .room-title-one{
-    font-family: "Roboto", sans-serif;
-    font-weight:400;
     text-align: left;
+    padding: 10px;
 }
 
 .popular-now img{
@@ -141,10 +146,15 @@ font-size: x-small;
     margin-left: 10px;
     display: flex; /*stars and participants together on a row*/
     gap: 10px;
+
 }
 
 .room-description{
-    padding: 10px;
+text-align: left;
+margin-left: 10px;
+padding-left:0;
+width:100%;
+font-size:13px;
 }
 
 .stars img{
@@ -178,16 +188,21 @@ span{
 .room-container{
     display: flex;/*We have to be able to scroll horisontally between rooms*/
     overflow-x: auto; /*Horisontal swipe OK*/
+    max-width: 100%;
+    padding-left: 12px;
+    padding-bottom: 10px;
+    
     
 }
 
 .first-room, .second-room, .third-room{
     flex: 0 0 80%; /*% makes it responsive*/
+    color: black;    
     margin: 10px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     overflow: hidden; /*Borde radius for the upper part of photo!*/    
-
+    
 }
 
 .button-container-two{
@@ -234,29 +249,25 @@ span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #011827;
-    align-items: center;
     align-content: center;
+    text-align: center;
+    background-color: #011827;
     padding:30px;
-    padding-bottom: 80px;
     color: white;
     width:100vw;
-}
-
-article{
-    font-size: larger; 
-    max-width: 80%; /*width for Text*/   
-    text-align: center;
+    height:55vh;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4em;
 }
 
 .full-story{
-    margin-top: 40px;
+    margin-top: 2em;
     background-color: #011827;
     color:  #8ACFE5;
     outline-color:  #8ACFE5;
     font-weight: bolder;
     font-size: large;
-    padding:15px;
+    padding:12px;
     outline: 1px solid  #8ACFE5;
     border-radius: 3px;
 }
@@ -267,11 +278,6 @@ article{
     margin-top: -6%; /*Could not get rid of the white space another way*/
     margin-bottom: 10%;
 }
-
-.friends{
-    display: flex;
-    flex-direction: column;  
-}
  
 .friends h2{
     font-family: "Roboto", sans-serif;
@@ -279,22 +285,40 @@ article{
     padding:2%;
     margin-top: -8%;
 
-}
-
-.build-team p{
-    font-family: "Roboto", sans-serif;
-    margin-right:15%;
-    font-size: 16px;
-    font-weight: 400;
 
 }
 
 .friends .build-team{
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    margin-top: 5px;
-    padding:2%;
+    margin-top: 3%;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    width:100%;
+    text-align: left;
+    font-size: 20px;
+}
 
+.online-play .play-online p {
+    font-family: "Roboto", sans-serif;
+    margin-top: 3%;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    width:100%;
+    text-align: left;
+    font-size: 20px;
+     
+}
+
+.online-play{
+    width:100%
+}
+
+.friends{
+    width:100%
 }
 
 .book-on-site-btn{   
@@ -307,7 +331,7 @@ article{
     width: 60%;
     margin-bottom: 5px;
     margin-left: 15px;
-    margin-top: 15px;
+    margin-top: 30px;
     margin-bottom: 20%;   
     font-size: 16px;
 }
@@ -321,22 +345,12 @@ article{
 .online-play h2{
     font-family: "Roboto", sans-serif;
     font-size: x-large;
+
     padding:2%;
     margin-top: -8%;
     margin-left: 1%;
-    margin-right: 10%;
-
-}
-
-.online-play .play-online p {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    margin-left: 3%;
-    margin-right: 25%;
-    max-width:900px; 
-    margin-right:15%;
-    font-size: 16px;
     
+
 }
 
 .see-all-btn{   
@@ -354,7 +368,7 @@ article{
     font-size: 16px;
 }
 
-.end-page{
+.end-page {
     margin-top: 20px;
     background-color: #011827;
     color: white;
@@ -362,16 +376,25 @@ article{
     font-size: large;
     padding:5%;
     padding-top: 12%;
-    padding-bottom: 12%;
+    padding-bottom: 12%;   
 }
 
-.footer-menu p{
+.footer-menu__logo{
+    display: flex;
+    flex-direction: left;
+}
+
+.footer-menu p {
+    display:block;
     font-family: "Roboto", sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     padding-top: 3%;
+    padding-bottom:10%;
     font-weight: 300;
-    margin-right: 10px;
-    
+    margin-right: 0;
+    width:100%;
+    text-align: left;
+    display: flex;  
 }
 
 .footer-nav ul{
