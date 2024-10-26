@@ -10,10 +10,6 @@
     display:none;
 }
 
-.user-quote-two{
-    display:none;
-}
-
 
 body{
     font-family: "open-sans", sans-serif;
@@ -87,6 +83,13 @@ h1 span{ /*hacker escape rooms text*/
     border-style: none;
 }
 
+.quote-wrapper{
+    position:relative;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
 .quote-container{
     display: flex; /*flexbox to put image and text horisontally*/
     align-items: center;
@@ -94,19 +97,35 @@ h1 span{ /*hacker escape rooms text*/
     justify-content: center;
     font-size: 1.2em;
     font-style: italic;
-    margin-left: 25px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 3em;
     margin-bottom: 3em;
-    max-width: 320px; /*width for Text*/   
-    gap: 5px; /*space between image and text*/
-    padding: 10px; /*inner margins*/
+    max-width: 100%   
     
+}
+
+.quote-container-two{
+    display:none;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    font-size: 1.2em;
+    font-style: italic;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    max-width: 100% /*width for Text*/   
+    
+
 }
 
 .quote-container img{
     width:60px;
-    margin-top: -2em;
+    margin-top: -1em;
     height: auto;
+    padding-left:1%;
     margin-right: 10px;
 }
 
@@ -117,6 +136,21 @@ font-style: normal;
 margin-top: 4px;
 font-size: 0.7em;
 font-weight: 400;
+}
+
+.quote-text-two h6{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    margin-top: 4px;
+    font-size: 0.7em;
+    font-weight: 400;
+}
+
+.quote-container-two img{
+    width:60px;
+    margin-top: -2em;
+    height: auto;
+    margin-right: 10px;
 }
 
 .popular-now span{
@@ -447,12 +481,26 @@ span{
 @media(min-width:600px){
 
     .menu-list-desktop{
-    display:block;
+    display:flex;
+    justify-content: space-evenly;
+    
 }
-    .main{
-        grid-template-columns: repeat(2,1fr);
-        gap: 20px;
+    .quote-container-two{
+        display:flex;
+        flex-direction: row;
+        
     }
+
+    .quote-wrapper{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap:10px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
     
 }
 
