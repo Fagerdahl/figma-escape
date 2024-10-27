@@ -371,9 +371,9 @@ span{
     border-radius: 3px;
     width: 60%;
     margin-bottom: 5px;
-    margin-left: 15px;
+    margin-left: -120px;
     margin-top: 30px;
-    margin-bottom: 10%;   
+    margin-bottom: 20%;   
     font-size: 16px;
 }
 .online-play img{
@@ -404,7 +404,7 @@ span{
     margin-bottom: 5px;
     margin-left: 15px;
     margin-top: 30px;
-    margin-bottom: 20%;
+    margin-bottom: 12%;
     font-size: 16px;
 }
 
@@ -711,32 +711,37 @@ h1 { /*hacker escape rooms text*/
 
     /*här börjar jag med grid-äventyret!!!*/
     .friends-team{
-        display:flex;
-        flex-direction: row;
-        margin-top: -17px;
+        display:grid;
+        grid-template-columns: (1,1);
+       
+        
     }
 
     .friends img{ /*bilden på två pers*/
-        
-  
+        max-width:50%;
+        margin-left: -420px;
+        margin-top: -40px;
     }
   
     .online-play img{ /*bilden på kvinna*/
-     
-        max-width:100%;
-        
-      
-        
+        max-width:50%;
+        float:right;
+        margin-top: -310px;
+       
     }
   
     .information-online { /*All text för online-bilden*/
+      color: orange;
+      
+      
       
      
     }
 
     .information-friends { /*all text för friends*/
     
-      
+      color: green;
+     
       
       
     }
