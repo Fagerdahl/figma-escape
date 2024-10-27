@@ -487,20 +487,36 @@ span{
 @media(min-width:600px){
 
     .menu-list-desktop {
-        display: flex;
-        flex-direction: column;
-        
+        display: flex;     
+}
+
+.logo{
+    width: 100%;
+    height: auto;
+}
+
+h1 { /*hacker escape rooms text*/
+    display: flex;
+    font-size: 1.6rem;
+    margin-top: 30px;
 }
 
 .menu-list-desktop ul {
-    display: flex; 
     list-style-type: none;  
+    display: flex;
+    gap:80px;
+    margin-left: 130px; 
+    font-weight: bolder;
+    padding-top: 18px;
+    padding-bottom: 10px;
     
 }
 
 .menu-list-desktop a {
     color: white;
     text-decoration: none; 
+    font-size: small;
+    white-space: nowrap;
 }
 
     .quote-container-two{
@@ -697,19 +713,18 @@ span{
     .friends-team{
         display:flex;
         flex-direction: row;
+        margin-top: -17px;
     }
 
     .friends img{ /*bilden på två pers*/
-        display: grid;
-        grid-template-columns: (2fr,2fr);
-   
-    
+        
   
     }
   
     .online-play img{ /*bilden på kvinna*/
      
         max-width:100%;
+        
       
         
     }
