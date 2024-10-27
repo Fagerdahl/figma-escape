@@ -10,7 +10,6 @@
     display:none;
 }
 
-
 body{
     font-family: "open-sans", sans-serif;
     background-color: white;
@@ -342,6 +341,10 @@ span{
     
 }
 
+.friends-team{
+    display:grid;
+    gap:20px;
+}
 .play-online {
     font-family: "Roboto", sans-serif;
     margin-top: 3%;
@@ -710,23 +713,18 @@ h1 { /*hacker escape rooms text*/
 
 
     /*här börjar jag med grid-äventyret!!!*/
-    .friends-team{
-        display:grid;
-        grid-template-columns: (1,1);
-       
+    .friends-team{ /*parent element*/
+        grid-template-columns: 1fr 1fr;  
         
     }
 
     .friends img{ /*bilden på två pers*/
-        max-width:50%;
-        margin-left: -420px;
-        margin-top: -40px;
+        max-width:100%;
     }
   
     .online-play img{ /*bilden på kvinna*/
-        max-width:50%;
-        float:right;
-        margin-top: -310px;
+        max-width:100%;
+        
        
     }
   
@@ -734,22 +732,36 @@ h1 { /*hacker escape rooms text*/
       color: orange;
       
       
-      
-     
     }
 
     .information-friends { /*all text för friends*/
+    display: flex;
+    flex-direction: column;
     
-      color: green;
-     
-      
+    max-width: 400px;
+      color: green; 
       
     }
 
+    .book-on-site-btn{
+        width:50%;
+        font-size: 16px;
+        margin-left: 20px;
+    }
 
+    .see-all-btn{
+        width:50%;
+        font-size: 16px;
+    }
+    .online-play{
+       display: flex;
+        flex-direction: column-reverse;
+    }
 
-
-
+    .friends{
+       
+    }
+ 
 
 
 
