@@ -343,7 +343,11 @@ span{
 
 .friends-team{
     display:grid;
-    gap:20px;
+    grid-template-areas:
+    "img1"
+    "text1"
+    "img2"
+    "text2";
 }
 .play-online {
     font-family: "Roboto", sans-serif;
@@ -714,33 +718,46 @@ h1 { /*hacker escape rooms text*/
 
     /*här börjar jag med grid-äventyret!!!*/
     .friends-team{ /*parent element*/
-        grid-template-columns: 1fr 1fr;  
-        
+        grid-template-columns: 1fr,1fr;
+    grid-template-areas:
+        "img1 text2"
+        "text1 img2";
     }
 
     .friends img{ /*bilden på två pers*/
-        max-width:100%;
-    }
-  
-    .online-play img{ /*bilden på kvinna*/
-        max-width:100%;
-        
+        grid-area:img1;
+
        
     }
   
-    .information-online { /*All text för online-bilden*/
-      color: orange;
-      
-      
+    .online-play img{ /*bilden på kvinna*/
+        max-width:100%; 
+        grid-area: img2;
+    }
+  
+    .information-online .play-online { 
+      font-size: medium;
     }
 
+    .information-friends .build-team { 
+        font-size: medium;
+      }
+
+      .information-online h2 { 
+        font-size: 1.2rem;
+      }
+  
+      .information-friends h2{ 
+          font-size: 1.2rem;
+        }
     .information-friends { /*all text för friends*/
-    display: flex;
-    flex-direction: column;
-    
-    max-width: 400px;
-      color: green; 
-      
+    grid-area: text1;
+        padding:10px;
+    }
+
+    .information-online{
+        padding:10px;
+        grid-area: text2;
     }
 
     .book-on-site-btn{
@@ -756,12 +773,10 @@ h1 { /*hacker escape rooms text*/
     .online-play{
        display: flex;
         flex-direction: column-reverse;
+        margin-top: -10px;
     }
 
-    .friends{
-       
-    }
- 
+   
 
 
 
