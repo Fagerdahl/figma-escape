@@ -180,10 +180,13 @@ font-weight: 400;
 
 .room-description{
 text-align: left;
-margin-left: 10px;
+margin-left: auto;
+margin-right: auto;
 padding-left:0;
-width:100%;
-font-size:13px;
+width:90%;
+font-size:1em;
+
+
 }
 
 .stars img{
@@ -321,6 +324,7 @@ span{
     margin-right: auto;
     margin-top: -10%;
     padding:10px;
+    text-align: left;
 }
 
 .friends-team h2 .friends-team .build-team{
@@ -591,7 +595,7 @@ span{
     .room-description{
     text-align: left;
     width:100%;
-    font-size:10px;
+    font-size:11px;
     margin-left: auto;
     margin-right: auto;
     margin-top: -14px;
@@ -685,36 +689,41 @@ span{
         padding:10px;
         outline: 1px solid  #8ACFE5;
         border-radius: 3px;
+        
     }
-
 
 
     /*här börjar jag med grid-äventyret!!!*/
     .friends-team{
-        
-    }
-
-    .friends .information-friends .online-play .information-online{
-  
+        display:flex;
+        flex-direction: row;
     }
 
     .friends img{ /*bilden på två pers*/
-    
+        display: grid;
+        grid-template-columns: (2fr,2fr);
+   
     
   
     }
   
     .online-play img{ /*bilden på kvinna*/
      
-    
+        max-width:100%;
+      
+        
     }
   
     .information-online { /*All text för online-bilden*/
-      color: green;
+      
+     
     }
-  
-    .information-friends{ /*all text för friends*/
-      color: pink;
+
+    .information-friends { /*all text för friends*/
+    
+      
+      
+      
     }
 
 
