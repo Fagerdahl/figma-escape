@@ -771,17 +771,22 @@ h1 { /*hacker escape rooms text*/
         flex-direction: column-reverse;
        
     }
+    .end-page{
+        display:flex;
+        
+    }
 
-   
-
-
+    .end-page .footer-menu {
+        max-width: 400px;
+        padding: 10px;
+    }
 
 
 
    
 }
 
-
+/*extra som jag inte gjorde...*/
 /*Screens>1024px*/
 @media (min-width:1024px){
     .main{

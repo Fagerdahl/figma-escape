@@ -16,9 +16,9 @@ Then I looked at my problem, Section by section and tried to identify what I nee
 
 ##
 I am done with the layout for mobile. 
-My plan for DESKTOP LAYOUT:
+My plan for DESKTOP LAYOUT: 
 
-()
+(/)SURVIVE
 ()
 ()
 ()
