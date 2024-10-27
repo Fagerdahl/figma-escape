@@ -492,21 +492,23 @@ span{
     .quote-container-two{
         display:flex;
         flex-direction: row;
-        font-size: medium;
+        font-size: small;
     }
 
     .quote-container{
         display:flex;
         flex-direction: row;
-        font-size: medium;
+        font-size: small;
+        
     }
 
     .quote-wrapper{
         display:flex;
         flex-direction: row;
         justify-content: space-evenly;
-        max-width: 900px;
-        
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
       
         
     }
@@ -574,14 +576,16 @@ span{
         margin-left: 10px;
         display: flex; /*stars and participants together on a row*/
         gap: 50px;
-    
     }
     
     .room-description{
     text-align: left;
-    padding:2px;
     width:100%;
     font-size:10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -14px;
+    padding: 15px;
     }
     
     .stars img{
@@ -602,6 +606,8 @@ span{
         padding: 8px;
         border-radius: 4px;
         width: 50%;
+        font-size: x-small;
+        font-weight: bold;
         margin-bottom: 5px;
         margin-left: 100px;
         margin-top: 10px;
@@ -701,10 +707,6 @@ margin-top: 10px;
    height:auto;
    object-fit: contain;
    margin-right: 10px;/*between img and text*/
-  }
-
-  .play-online{
-
   }
 
   .online-play{
