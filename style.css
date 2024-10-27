@@ -299,8 +299,16 @@ span{
     border-radius: 3px;
 }
 
+.friends{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
 .friends img{
-    width: 100vw; /*responsive image, the whole width of its container*/
+    width: 100%; /*responsive image, the whole width of its container*/
     height: auto;
     margin-top: -6%; /*Could not get rid of the white space another way*/
     margin-bottom: 10%;
@@ -313,8 +321,10 @@ span{
     margin-right: auto;
     margin-top: -10%;
     padding:10px;
+}
 
-
+.friends-team h2 .friends-team .build-team{
+    margin:10px;
 }
 
 .friends-team .build-team{
@@ -376,7 +386,6 @@ span{
     padding:2%;
     margin-top: -8%;
     margin-left: 1%;
-    
 
 }
 
@@ -475,6 +484,7 @@ span{
 
     .menu-list-desktop {
         display: flex;
+        flex-direction: column;
         
 }
 
@@ -677,59 +687,48 @@ span{
         border-radius: 3px;
     }
 
-  .friends img{
-margin-top: 10px;
-   width: 50%;
-   height:auto;
-   object-fit: contain;
-   margin-right: 10px;/*between img and text*/
-
-  }
-
-  .build-team{
-   
-    color: green;
-   
-  }
-
-  .friends h2{
-    color: orange;
-  }
-
-  .friends{
-    display:flex;
-    flex-direction: row;
-
-  }
-
-  .online-play img{
-    width: 50%;
-   height:auto;
-   object-fit: contain;
-   margin-right: 10px;/*between img and text*/
-  }
-
-  .online-play{
-    display: flex;
-    flex-direction: row-reverse;
-  }
 
 
+    /*här börjar jag med grid-äventyret!!!*/
+    .friends-team{
+        
+    }
 
+    .friends .information-friends .online-play .information-online{
+  
+    }
 
-
-
-
-
-
-
-
-
-
-
-
+    .friends img{ /*bilden på två pers*/
     
+    
+  
+    }
+  
+    .online-play img{ /*bilden på kvinna*/
+     
+    
+    }
+  
+    .information-online { /*All text för online-bilden*/
+      color: green;
+    }
+  
+    .information-friends{ /*all text för friends*/
+      color: pink;
+    }
+
+
+
+
+
+
+
+
+
+
+   
 }
+
 
 /*Screens>1024px*/
 @media (min-width:1024px){
