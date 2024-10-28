@@ -18,10 +18,10 @@ Then I looked at my problem, Section by section and tried to identify what I nee
 I am done with the layout for mobile. 
 My plan for DESKTOP LAYOUT: 
 
-(/)SURVIVE
-()
-()
-()
-()
-()
-()
+was written on paper.. I am finally done and I have following breakpoints. 
+
+IPHONE SE= mobile first.
+screen>600px
+screen>900px
+screen>1024px
+

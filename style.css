@@ -156,6 +156,14 @@ h1 span {
   padding: 10px;
 }
 
+.popular-now .h2 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
 .popular-now img {
   display: grid;
   width: 100%; /*responsive image, the whole width of its container*/
@@ -185,8 +193,9 @@ h1 span {
 }
 
 .participants {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   margin-top: 1%;
+  margin-left: -6px;
 }
 
 .book-first-btn,
@@ -490,10 +499,9 @@ span {
     font-size: 1.3rem;
     margin-top: 30px;
     margin-left: -20px;
-    
   }
 
-  h1 span{
+  h1 span {
     margin: -3px;
   }
 
@@ -633,12 +641,11 @@ span {
     padding: 6px;
     border-radius: 4px;
     width: 50%;
-    height:25px;
+    height: 25px;
     font-size: xx-small;
     font-weight: bold;
     margin-left: 90px;
     margin-top: -5px;
-    
   }
 
   .onsite-btn-two {
@@ -685,7 +692,7 @@ span {
     padding: 8em;
     font-family: "Roboto", sans-serif;
     font-size: 1.3em;
-    max-height:0; 
+    max-height: 0;
   }
 
   .full-story {
@@ -702,38 +709,37 @@ span {
 
   .friends-team {
     /*parent element*/
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: auto, auto;
     grid-template-areas:
       "img1 text2"
       "text1 img2";
-      gap:0;
-      width:100%;
+    gap: 0;
+    width: 100%;
   }
 
   .friends img {
     /*two persons img*/
     grid-area: img1;
     max-width: 100%;
-    height:100%;
+    height: 100%;
     object-fit: contain;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
   }
 
   .online-play img {
     grid-area: img2;
-    height:100%;
+    height: 100%;
     max-width: 100%;
     object-fit: contain;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
   }
 
   .information-online .play-online {
     font-size: medium;
-    
   }
 
   .information-friends .build-team {
@@ -751,36 +757,27 @@ span {
     /*all text for friends*/
     grid-area: text2;
     margin-top: 20px;
-    padding:2em;
+    padding: 2em;
   }
 
   .information-online {
     grid-area: text1;
     margin-top: 25px;
-    padding:2em;
+    padding: 2em;
   }
 
   .book-on-site-btn {
-  margin-left:10px;
+    margin-left: 10px;
   }
 
   .see-all-btn {
-    margin-left:10px;
+    margin-left: 10px;
   }
   .online-play {
     display: flex;
     flex-direction: column-reverse;
   }
 
-
-
-
-
-
-
-
-
-  
   .end-page {
     display: flex;
   }
@@ -789,41 +786,99 @@ span {
     max-width: 400px;
     padding: 10px;
   }
-
-
-
-
-
-
-
-
 }
 
+@media (min-width: 900px) {
+  .room-container {
+    display: flex;
+    flex-direction: row;
+    max-height: 100%;
+    max-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .popular-now h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    text-align: left;
+    padding: 10px;
+  }
 
+  .room-description {
+    text-align: left;
+    width: 100%;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -18px;
+    margin-bottom: 18px;
+    padding: 10px;
+  }
 
+  .stars img {
+    width: 100px;
+    height: auto;
+  }
 
+  .participants {
+    font-size: 0.7rem;
+    margin-top: 1%;
+    margin-left: 4em;
+  }
 
+  .book-first-btn,
+  .book-second-btn,
+  .book-third-btn {
+    background-color: #fc1e06;
+    font-weight: 400;
+    color: white;
+    border: none;
+    padding: 7px;
+    border-radius: 4px;
+    width: 40%;
+    height: 30px;
+    font-size: x-small;
+    font-weight: bold;
+    margin-left: 170px;
+    margin-top: -5px;
+  }
 
+  .end-page {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 80px;
+    align-items: center;
+  }
 
+  .end-page .footer-menu__logo {
+    margin-left: 10px;
+  }
 
+  .end-page .footer-menu {
+    grid-column: 1;
+    max-width: 100%;
+    text-align: left;
+  }
 
+  .footer-menu p {
+    margin-left: 10px;
+    margin-right: 250px;
+  }
 
+  .footer-nav .together {
+    grid-column: 2;
+    margin-left: 150px;
+    min-width: 250px;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  nav .follow {
+    grid-column: 3;
+    float: right;
+    margin-top: -75px;
+    margin-left: 80px;
+  }
+}
 
 /*Screens>1024px*/
 @media (min-width: 1024px) {
@@ -842,19 +897,18 @@ span {
     font-size: 2.2rem;
     margin-top: 30px;
     margin-left: 0.4rem;
-    
   }
 
-  h1 span{
+  h1 span {
     margin: -3px;
   }
 
   .menu-list-desktop ul {
     list-style-type: none;
     display: flex;
-    flex-direction: row;
-    gap:110px;
-    margin-left: 15em;
+    flex-direction: row; 
+    gap: 12vw;
+    margin-left: 14vw;
     padding-top: 20px;
     padding-bottom: 1px;
   }
@@ -868,7 +922,7 @@ span {
 
   .main-image {
     max-width: 100%; /*responsive image, the whole width of its container*/
-    height:390px;
+    height: 390px;
     object-fit: cover;
   }
 
@@ -933,7 +987,6 @@ span {
     max-width: 100%;
     padding-left: 30px;
     padding-right: 30px;
-    
   }
   .popular-now h2 {
     font-family: "Roboto", sans-serif;
@@ -975,7 +1028,7 @@ span {
     padding: 7px;
     border-radius: 4px;
     width: 40%;
-    height:30px;
+    height: 30px;
     font-size: x-small;
     font-weight: bold;
     margin-left: 170px;
@@ -1026,15 +1079,14 @@ span {
     padding: 10em;
     font-family: "Roboto", sans-serif;
     font-size: 1.3em;
-    max-height:0; 
+    max-height: 0;
   }
-  
-  .article-part article{
+
+  .article-part article {
     max-width: 400px;
   }
 
   .full-story {
-    
     background-color: #011827;
     color: #8acfe5;
     outline-color: #8acfe5;
@@ -1047,32 +1099,31 @@ span {
 
   .friends-team {
     /*parent element*/
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: auto, auto;
     grid-template-areas:
       "img1 text2"
       "text1 img2";
-      width:100%;
-      margin-bottom: 100px;
+    width: 100%;
+    margin-bottom: 100px;
   }
 
   .friends img {
     /*two persons img*/
     grid-area: img1;
     max-width: 100%;
-    height:100%;
+    height: 100%;
     object-fit: contain;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
   }
 
   .online-play img {
     grid-area: img2;
-    height:100%;
+    height: 100%;
     max-width: 100%;
     object-fit: contain;
-    
   }
 
   .information-online h2 {
@@ -1089,8 +1140,6 @@ span {
     height: 100px;
     padding: 55px;
     padding-left: 80px;
-
-    
   }
   .information-online {
     /*all text for online*/
@@ -1102,9 +1151,9 @@ span {
   }
 
   .book-on-site-btn {
-  max-width: 200px;
-  margin-left: 5px;
-  margin-top: 15px;
+    max-width: 200px;
+    margin-left: 5px;
+    margin-top: 15px;
   }
 
   .see-all-btn {
@@ -1112,26 +1161,24 @@ span {
     margin-left: 5px;
   }
 
-  .information-friends .build-team{
+  .information-friends .build-team {
     font-size: 1.3em;
     max-width: 330px;
   }
 
-  .information-online .play-online{
+  .information-online .play-online {
     font-size: 1.3em;
     max-width: 330px;
   }
 
-    
   .end-page {
-   display: grid;
-   grid-template-columns: 2fr 1fr 1fr;
-   padding: 80px;
-   align-items: center;
-   
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 80px;
+    align-items: center;
   }
 
-  .end-page .footer-menu__logo{
+  .end-page .footer-menu__logo {
     margin-left: 10px;
   }
 
@@ -1146,38 +1193,16 @@ span {
     margin-right: 250px;
   }
 
-  .footer-nav .together{
+  .footer-nav .together {
     grid-column: 2;
     margin-left: 150px;
     min-width: 250px;
-    
   }
 
-  nav .follow{
-  grid-column: 3;
-  float:right;
-  margin-top: -75px;
-  margin-left: 80px;
-  }
-  
-}
-
-/*Screens>1440px*/
-@media (min-width: 1440px) {
-  .main {
-    grid-template-columns: repeat(4, 1fr);
-    padding: 60px;
-    gap: 40px; /*Wider gap on bigger screens*/
-  }
-
-  .onsite-btn,
-  .online-btn,
-  .book-first-btn,
-  .book-second-btn,
-  .book-third-btn {
-    width: 300px;
-  }
-  .friends img {
-    width: 80%; /*smaller images on bigger screens*/
+  nav .follow {
+    grid-column: 3;
+    float: right;
+    margin-top: -75px;
+    margin-left: 80px;
   }
 }
