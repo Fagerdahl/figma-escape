@@ -1072,50 +1072,41 @@ span {
     height:100%;
     max-width: 100%;
     object-fit: contain;
-    margin:0;
-    padding:0;
-  }
-
-  .information-online .play-online {
-    font-size: medium;
     
   }
 
-  .information-friends .build-team {
-    font-size: medium;
-  }
-
   .information-online h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .information-friends h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .information-friends {
     /*all text for friends*/
     grid-area: text2;
-    margin-top: 20px;
-    padding:2em;
-  }
+    width: 450px;
+    height: 100px;
+    padding: 60px;
 
+    
+  }
   .information-online {
+    /*all text for online*/
     grid-area: text1;
-    margin-top: 25px;
-    padding:2em;
+    width: 450px;
+    height: 100px;
+    padding: 55px;
   }
 
   .book-on-site-btn {
-  margin-left:10px;
+  max-width: 200px;
   }
 
   .see-all-btn {
-    margin-left:10px;
+    max-width: 200px;
   }
-  .online-play {
-    display: flex;
-    flex-direction: column-reverse;
-  }
+ 
 }
 
 /*Screens>1440px*/
