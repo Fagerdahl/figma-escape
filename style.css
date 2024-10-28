@@ -1053,8 +1053,8 @@ span {
     grid-template-areas:
       "img1 text2"
       "text1 img2";
-      gap:0;
       width:100%;
+      margin-bottom: 100px;
   }
 
   .friends img {
@@ -1085,26 +1085,41 @@ span {
   .information-friends {
     /*all text for friends*/
     grid-area: text2;
-    width: 450px;
+    width: 500px;
     height: 100px;
-    padding: 60px;
+    padding: 55px;
+    padding-left: 80px;
 
     
   }
   .information-online {
     /*all text for online*/
     grid-area: text1;
-    width: 450px;
+    width: 500px;
     height: 100px;
     padding: 55px;
+    padding-left: 80px;
   }
 
   .book-on-site-btn {
   max-width: 200px;
+  margin-left: 5px;
+  margin-top: 15px;
   }
 
   .see-all-btn {
     max-width: 200px;
+    margin-left: 5px;
+  }
+
+  .information-friends .build-team{
+    font-size: 1.3em;
+    max-width: 330px;
+  }
+
+  .information-online .play-online{
+    font-size: 1.3em;
+    max-width: 330px;
   }
  
 }
