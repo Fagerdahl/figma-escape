@@ -1121,7 +1121,45 @@ span {
     font-size: 1.3em;
     max-width: 330px;
   }
- 
+
+    
+  .end-page {
+   display: grid;
+   grid-template-columns: 2fr 1fr 1fr;
+   padding: 80px;
+   align-items: center;
+   
+  }
+
+  .end-page .footer-menu__logo{
+    margin-left: 10px;
+  }
+
+  .end-page .footer-menu {
+    grid-column: 1;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .footer-menu p {
+    margin-left: 10px;
+    margin-right: 250px;
+  }
+
+  .footer-nav .together{
+    grid-column: 2;
+    margin-left: 150px;
+    min-width: 250px;
+    
+  }
+
+  nav .follow{
+  grid-column: 3;
+  float:right;
+  margin-top: -75px;
+  margin-left: 80px;
+  }
+  
 }
 
 /*Screens>1440px*/
