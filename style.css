@@ -839,7 +839,7 @@ span {
   h1 {
     /*hacker escape rooms text*/
     display: flex;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-top: 30px;
     margin-left: 0.4rem;
     
@@ -852,18 +852,24 @@ span {
   .menu-list-desktop ul {
     list-style-type: none;
     display: flex;
-    gap: 60px;
-    margin-left: 10em;
-    font-weight: bolder;
-    padding-top: 18px;
-    padding-bottom: 10px;
+    flex-direction: row;
+    gap:110px;
+    margin-left: 15em;
+    padding-top: 20px;
+    padding-bottom: 1px;
   }
 
   .menu-list-desktop a {
     color: white;
     text-decoration: none;
-    font-size: small;
+    font-size: 1.7em;
     white-space: nowrap;
+  }
+
+  .main-image {
+    max-width: 100%; /*responsive image, the whole width of its container*/
+    height:390px;
+    object-fit: cover;
   }
 
   .quote-container-two {
