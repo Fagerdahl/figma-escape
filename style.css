@@ -7,7 +7,7 @@
 }
 
 .menu-list-desktop {
-  display: flex;
+  display: none;
 }
 
 .menu-list-desktop ul {
@@ -20,42 +20,63 @@
   padding-bottom: 10px;
 }
 
-.menu-list-desktop a {
-  color: white;
-  text-decoration: none;
-  font-size: small;
-  white-space: nowrap;
+.sidebar-btn{
+width: 51px;
+height: 26px;
+top: 34px;
+left: 409px;
+margin-right: 0.5rem;
+background-color: #011827;
+background:none;
+border:none;
+padding-bottom: 60px;
+z-index: 1000;
+cursor: pointer;
+}
+
+.menu-wrapper{
+  position: fixed;
+  inset:0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.715);
+  backdrop-filter: blur(1px);
+  padding: 2rem;
+  z-index:1000;
 }
 
 .menu-list-mobile{
+  margin: auto;
+  inset:0; /*inset: 0 helps (top,bottom,r,l) when position is fixed.*/
   position: fixed; 
+  align-items: center;
+  text-wrap: nowrap;
   top:0;
   right:0;
-  height:100vh;
-  width: 250px;
-  z-index: 999;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  
-
+  height:95vh;
+  width: 22rem;
+  padding:6rem;
+  z-index: 1001; /*Higher than blurry background*/
+  background-color: #011827;
+  display: none;
 }
 
 .menu-list-mobile li{
   list-style-type: none;
-  width:100%;
-  padding: 1.5rem;
+  padding: 1rem;
   font-family: "roboto";
-  font-size: large;
-  
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 42.19px;  
 }
 
-a{
-  color: black;
+.menu-list-mobile a{
+  background-color: #011827;
+  color: WHITE;
   text-decoration: none;
 }
+
 
 body {
   min-height:100vh; /*CONTENT OCCUPIES THE ENTIRE SCREEN*/
@@ -66,7 +87,7 @@ body {
 
 .header {
   display: grid;
-  grid-template-columns: 100px 1fr; /*100 px for logo, the rest 4 text*/
+  grid-template-columns: 100px 1fr auto; /*100 px for logo, the second 4 text, auto for hamb-menu*/
   grid-template-rows: 100px; /*auto-height for rows*/
   background-color: #011827;
   align-items: center;
@@ -79,6 +100,7 @@ body {
 .logo {
   width: 100%;
   height: auto;
+  margin-bottom: 10px;
 }
 
 h1 span {
@@ -86,6 +108,10 @@ h1 span {
   display: block;
   font-family: "open-sans", sans-serif;
   padding-left: 10px;
+}
+
+h1{
+  margin-bottom: 10px;
 }
 
 .main-image {
