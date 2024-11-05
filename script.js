@@ -1,24 +1,14 @@
-const sidebarButton=document.querySelector(".sidebar-btn");
+const openBtn=document.querySelector(".sidebar-btn");
+const closeBtn=document.querySelector(".close-btn")
 const menuWrapper= document.querySelector(".menu-wrapper");
 const headerNav=document.querySelector(".menu-list-mobile");
 
-sidebarButton.addEventListener("click", () => {
-    console.log("button clicked");
-
-    const exitNav=document.createElement("button");
-    const exitNavImg=document.createElement("img");
-
-    exitNavImg.setAttribute("src", "close.png");
-    exitNav.appendChild(exitNavImg);
-    exitNav.classList.add("exitNavImg");
-    headerNav.appendChild(exitNav);
-
-    sidebarButton.addEventListener("click", ()=> {
-        console.log ("btn clicked");
-        menuWrapper.classList.toggle("hidden");
-    });
-
-    exitNavImg.addEventListener("click", () =>{
-       menuWrapper.classList.add("hidden");
-    });
+openBtn.addEventListener("click",()=> {
+    menuWrapper.classList.toggle("visible");
+    console.log("opened");
 });
+
+closeBtn.addEventListener("click",()=>{
+menuWrapper.classList.remove("visible");
+console.log("closed");
+})

@@ -10,6 +10,26 @@
   display: none;
 }
 
+.hidden {
+  display: none; 
+}
+
+.menu-wrapper{
+  display:none;
+}
+
+.menu-wrapper.visible{
+  display: block;
+}
+
+.close-btn {
+  position: absolute;
+  background: none;
+  border: none;
+  top:25px;
+  right:25px;
+}
+
 .menu-list-desktop ul {
   list-style-type: none;
   display: flex;
@@ -40,7 +60,7 @@ cursor: pointer;
   display: none;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.715);
+  background-color: rgba(247, 242, 242, 0.281);
   backdrop-filter: blur(1px);
   padding: 2rem;
   z-index:1000;
@@ -59,7 +79,7 @@ cursor: pointer;
   padding:6rem;
   z-index: 1001; /*Higher than blurry background*/
   background-color: #011827;
-  display: none;
+  display: flex;
 }
 
 .menu-list-mobile li{
