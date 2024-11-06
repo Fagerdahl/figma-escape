@@ -55,15 +55,40 @@ cursor: pointer;
 }
 
 .menu-wrapper{
+  display: none;
   position: fixed;
   inset:0;
-  display: none;
+  
   justify-content: center;
   align-items: center;
   background-color: rgba(247, 242, 242, 0.281);
   backdrop-filter: blur(1px);
   padding: 2rem;
-  z-index:1000;
+  z-index:10;
+  opacity: 0;
+  transform: scale(1);
+  transform-origin: center;
+  transition: opacity 0.5s ease, opacity 0.5s ease;
+  
+}
+
+.menu-wrapper.visible{
+  display: block;
+  opacity:1;
+  animation: slideIn 0.3s ease forwards;
+}
+ 
+
+@keyframes slideIn{
+  0%{
+    opacity:0;
+    transform: scale(0.8%) translate(-50%, -50%,-50%, -50%);
+  }
+
+  100%{
+    opacity:1;
+    transform: scale(1) translate(-50%, -50%, -50%, -50%);
+  }
 }
 
 .menu-list-mobile{
