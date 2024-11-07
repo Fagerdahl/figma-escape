@@ -11,4 +11,4 @@ openBtn.addEventListener("click",()=> {
 closeBtn.addEventListener("click",()=>{
 menuWrapper.classList.remove("visible");
 console.log("closed");
-})
+});

@@ -28,6 +28,7 @@
   border: none;
   top:25px;
   right:25px;
+  display: block;
 }
 
 .menu-list-desktop ul {
@@ -41,6 +42,7 @@
 }
 
 .sidebar-btn{
+display: none;
 width: 51px;
 height: 26px;
 top: 34px;
